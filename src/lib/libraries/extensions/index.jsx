@@ -46,6 +46,10 @@ import gdxforInsetIconURL from './gdxfor/gdxfor-small.svg';
 import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
+import maikaIconURL from './olliMaika/maika.png';
+import maikaforInsetIconURL from './olliMaika/maika-small.png';
+
+
 export default [
     {
         name: (
@@ -317,5 +321,23 @@ export default [
             />
         ),
         helpLink: 'https://scratch.mit.edu/vernier'
+    },
+    {
+        name: 'Loa thông minh Maika',
+        extensionId: 'maika',
+        collaborator: 'OLLI Technology',
+        iconURL: maikaIconURL,
+        insetIconURL: maikaforInsetIconURL,
+        description: (
+            <FormattedMessage
+                defaultMessage="Điều khiển loa Maika bằng lệnh"
+                description="Description for the Loa thông minh Maika"
+                id="gui.extension.maika.description"
+            />
+        ),
+        featured: true,
+        disabled: false,
+        internetConnectionRequired: true,
+        helpLink: 'https://olli.vn'
     }
 ];
